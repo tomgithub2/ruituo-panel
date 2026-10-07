@@ -100,10 +100,10 @@ def main():
 
     n1 = build_manifest(key, PANEL_SCOPE,
                         os.path.join(BASE, 'backend', 'integrity_manifest.json'),
-                        '云枢面板')
+                        '锐同面板')
     n2 = build_manifest(key, SITE_SCOPE,
 # [官网相关路径已脱敏：官网不开源，内部结构不公开]
-                        '云枢面板官网')
+                        '锐同面板官网')
 
 
 if __name__ == '__main__':

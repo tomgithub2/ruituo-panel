@@ -97,7 +97,7 @@ def _write_dropin(changes) -> bool:
     """写面板专属 drop-in（00- 前缀在 Include 里排最前 → 优先级最高）。"""
     try:
         os.makedirs(DROPIN_DIR, exist_ok=True)
-        body = ["# 云枢面板 SSH 加固（P-21：写在 drop-in 里才能真正生效）"]
+        body = ["# 锐同面板 SSH 加固（P-21：写在 drop-in 里才能真正生效）"]
         body += [f"{k} {v}" for k, v in changes]
         with open(DROPIN_FILE, "w", encoding="utf-8") as fh:
             fh.write("\n".join(body) + "\n")

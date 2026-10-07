@@ -1,7 +1,7 @@
 #!/bin/bash
 # Created by 小杜 on 2026/08
 
-# 云枢面板 Linux 启动脚本
+# 锐同面板 Linux 启动脚本
 set -e
 cd "$(dirname "$0")/backend"
 
@@ -18,5 +18,5 @@ if [ ! -d ".deps/fastapi" ]; then
     }
 fi
 
-echo "[*] 云枢面板启动中: http://127.0.0.1:8000"
+echo "[*] 锐同面板启动中: http://127.0.0.1:8000"
 exec python3 run.py

@@ -2,7 +2,7 @@
 # Created by 小杜 on 2026/08
 
 # ============================================================
-#  云枢面板 命令行管理工具（自研）
+#  锐同面板 命令行管理工具（自研）
 #  用法: rt [status|start|stop|restart|port|password|entrance|ssl|info|help]
 #  无参数时进入交互式菜单
 # ============================================================
@@ -21,7 +21,7 @@ get_entrance() { grep -o '"security_entrance"[[:space:]]*:[[:space:]]*"[^"]*"' "
 
 menu() {
   echo ""
-  echo "${GOLD}  ========== 云枢面板 命令行管理 ==========${RESET}"
+  echo "${GOLD}  ========== 锐同面板 命令行管理 ==========${RESET}"
   echo "   ${GREY}1)${RESET} 查看面板状态       ${GREY}6)${RESET} 查看面板信息"
   echo "   ${GREY}2)${RESET} 重启面板           ${GREY}7)${RESET} 设置安全入口"
   echo "   ${GREY}3)${RESET} 停止面板           ${GREY}8)${RESET} 生成面板HTTPS证书"
@@ -46,9 +46,9 @@ menu() {
 
 rt_status() {
   if systemctl is-active --quiet "$SVC"; then
-    echo "${GREEN}● 云枢面板运行中${RESET}  http://服务器IP:$(get_port)"
+    echo "${GREEN}● 锐同面板运行中${RESET}  http://服务器IP:$(get_port)"
   else
-    echo "${RED}○ 云枢面板未运行${RESET}"
+    echo "${RED}○ 锐同面板未运行${RESET}"
   fi
 }
 
@@ -97,7 +97,7 @@ gen_ssl() {
   openssl req -x509 -nodes -newkey rsa:2048 -days 3650 \
     -keyout "$RT_DIR/data/certs/panel/panel.key" \
     -out "$RT_DIR/data/certs/panel/panel.crt" \
-    -subj "/CN=云枢面板/O=Yunshu Panel/C=CN" 2>/dev/null && \
+    -subj "/CN=锐同面板/O=Ruitong Panel/C=CN" 2>/dev/null && \
   python3 -c "
 import json
 p = '$CONF'

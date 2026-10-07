@@ -1,4 +1,4 @@
-// 云枢面板 前端入口
+// 锐同面板 前端入口
 import router from './router.js'
 import store from './store.js'
 import api from './api.js'
