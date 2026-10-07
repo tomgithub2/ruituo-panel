@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-title RT面板 RT Panel
+title 云枢面板 Yunshu Panel
 
 :: ---------- 自动提权（UAC） ----------
 net session >nul 2>&1
@@ -17,6 +17,6 @@ if not exist ".deps\fastapi" (
     python -m pip install -r requirements.txt --target .deps
     if errorlevel 1 (echo [错误] 依赖安装失败，请检查网络后重试 && pause && exit /b 1)
 )
-echo [*] RT面板启动中: http://127.0.0.1:8000
+echo [*] 云枢面板启动中: http://127.0.0.1:8000
 python run.py
 pause

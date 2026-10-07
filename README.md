@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🛡️ RT面板（RT Panel）
+# 🛡️ 云枢面板（Yunshu Panel）
 
 **跨平台服务器运维面板 · 开源版**　|　**Cross-platform Server Operations Panel · Open Source Edition**
 
-![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-important)
+![License](https://img.shields.io/badge/License-AGPL%20v3-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-blue)
 ![AI](https://img.shields.io/badge/AI-44%20Tools-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0--beta-orange)
@@ -17,9 +17,9 @@
 
 ## 📖 简介 Introduction
 
-RT面板是一款**完全自研**的跨平台服务器运维面板，功能覆盖服务器运维全场景，支持 Windows 与 Linux 双平台，提供白金 / 亮色专业 / 银黑三大主题（默认白金）。
+云枢面板是一款**完全自研**的跨平台服务器运维面板，功能覆盖服务器运维全场景，支持 Windows 与 Linux 双平台，提供白金 / 亮色专业 / 银黑三大主题（默认白金）。
 
-RT Panel is a **fully self-developed** cross-platform server operations panel with features that match and exceed similar products. It supports Windows and Linux with three built-in themes (Platinum default / Light-Pro / Silver-Black).
+Yunshu Panel is a **fully self-developed** cross-platform server operations panel with features that match and exceed similar products. It supports Windows and Linux with three built-in themes (Platinum default / Light-Pro / Silver-Black).
 
 ## ✨ 核心特性 Features
 
@@ -45,21 +45,27 @@ LICENSE · NOTICE · AUTHORS · OPEN-SOURCE-NOTICE.txt · THIRD-PARTY-NOTICES.tx
 
 ## 📜 许可与署名 License & Attribution
 
-本仓库全部代码采用 **CC BY-NC-ND 4.0**（署名-非商业性使用-禁止演绎 4.0 国际许可）授权，详见 [LICENSE](LICENSE)。
+本仓库全部代码采用 **GNU Affero 通用公共许可证 v3.0（AGPL-3.0）** 授权，协议全文见 [LICENSE](LICENSE)。
 
-All code in this repository is licensed under **CC BY-NC-ND 4.0** (Attribution-NonCommercial-NoDerivatives 4.0 International). See [LICENSE](LICENSE).
+All code in this repository is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. Full text: [LICENSE](LICENSE).
 
 | 行为 Action | 是否允许 Allowed | 依据 Basis |
 | --- | --- | --- |
-| 查看、学习 View & learn | ✅ | — |
-| 原样分享（保留署名） Share as-is (with attribution) | ✅ | BY |
-| 借鉴 / 参考 / 移植 Borrow / reference / port | ❌ 须先经原作者书面同意 prior written consent | 特别声明 Special notice |
-| 商业使用 Commercial use | ❌ 须先经原作者授权 author's consent | NC |
-| 修改 / 二次开发后分发 Modify / redistribute derivatives | ❌ 须先经原作者授权 author's consent | ND |
+| 使用 / 学习 / 修改 Use, learn, modify | ✅ 自由 freely | AGPL §0–§2 |
+| 分发原版或修改版 Distribute original or modified | ✅ 但**必须以 AGPL-3.0 开源全部对应源码** must release all corresponding source under AGPL-3.0 | AGPL §5 |
+| **部署为网络服务（SaaS / 托管 / 改版上线）Run as a network service** | ✅ 但**必须向使用者提供完整对应源码** must offer the complete corresponding source to users | **AGPL §13** |
+| 商业使用 Commercial use | ✅ 允许（AGPL 不限制用途）allowed, no field-of-use restriction | AGPL |
+| 保留版权与许可声明 Keep copyright & license notices | ⚠️ **必须** required | AGPL §4–§5 |
+| 移除 / 隐藏作者署名 Remove or hide attribution | ❌ 禁止 prohibited | AGPL §4–§5 |
+| 闭源二次分发（专有化）Closed-source redistribution | ❌ 禁止 prohibited | AGPL §5 |
 
-任何使用、分享、分发都必须署名原作者：**小杜（XiaoDu, https://www.rt888.icu）**，详见 [AUTHORS](AUTHORS)。
+> **AGPL §13 是本许可最关键的一条**：只要你把本软件（或其修改版）**部署成网络服务**给别人用，就必须向这些使用者提供**对应的完整源码**。
+> **The §13 network clause**: if you run this software (or a modified version) as a network service, you must offer the complete corresponding source to its users.
 
-Attribution to the original author **XiaoDu (小杜, https://www.rt888.icu)** is required for any use, sharing or distribution. See [AUTHORS](AUTHORS).
+原作者署名 / Original author：**小杜（XiaoDu, https://www.rt888.icu）** —— 任何分发都必须保留版权与许可声明，详见 [AUTHORS](AUTHORS) 与 [NOTICE](NOTICE)。
+
+> 历史说明：本仓库早期发行版曾以 CC BY-NC-ND 4.0 发布；**自本次更新起，仓库代码统一改为 AGPL-3.0**，旧的 CC 声明仅对历史发行版有效。AGPL-3.0 是 OSI 认可的自由软件许可，**不再有"禁止商用 / 禁止演绎"的限制**，改为"用了就必须开源"。
+> Historical note: early releases used CC BY-NC-ND 4.0; from this update on the repository is licensed under **AGPL-3.0**. The old CC notice applies only to historical releases.
 
 ## 🔒 开源范围 Scope
 
@@ -112,4 +118,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-<div align="center">© 2026 小杜（RT面板官方） · https://www.rt888.icu</div>
+<div align="center">© 2026 小杜（云枢面板官方） · https://www.rt888.icu</div>

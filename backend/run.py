@@ -1,4 +1,4 @@
-"""RT面板 启动入口。
+"""云枢面板 启动入口。
 开发环境依赖安装在 backend/.deps（sys.path 注入），
 目标机器部署时依赖装在系统/虚拟环境中，requirements.txt 由安装脚本处理。
 Windows 下若非管理员运行，将自动请求 UAC 提权后重启自身。
@@ -62,9 +62,9 @@ def main():
     if cfg.get('ssl_cert') and cfg.get('ssl_key') \
             and os.path.isfile(cfg['ssl_cert']) and os.path.isfile(cfg['ssl_key']):
         ssl_kwargs = {'ssl_certfile': cfg['ssl_cert'], 'ssl_keyfile': cfg['ssl_key']}
-        print(f'[*] RT面板 启动: https://127.0.0.1:{port} （HTTPS 已启用）')
+        print(f'[*] 云枢面板 启动: https://127.0.0.1:{port} （HTTPS 已启用）')
     else:
-        print(f'[*] RT面板 启动: http://127.0.0.1:{port}')
+        print(f'[*] 云枢面板 启动: http://127.0.0.1:{port}')
     uvicorn.run('app.main:app', host=host, port=port, log_level='info', **ssl_kwargs)
 
 

@@ -236,7 +236,7 @@ return function render(_ctx, _cache) {
           src: "/img/badge.png",
           alt: "RT"
         }, null, -1 /* CACHED */)),
-        _createElementVNode("span", _hoisted_4, _toDisplayString(_ctx.store.panel?.site_name || 'RT面板'), 1 /* TEXT */)
+        _createElementVNode("span", _hoisted_4, _toDisplayString(_ctx.store.panel?.site_name || '云枢面板'), 1 /* TEXT */)
       ]),
       _createElementVNode("nav", _hoisted_5, [
         (_ctx.sidebarCollapsed)

@@ -34,7 +34,7 @@ CONFIG_FILE = os.path.join(DATA_DIR, 'ai_config.json')
 # 自研 Agent 协议：工具白名单（一句话目标 → 多步计划 → 逐个执行）
 # ================================================================
 TOOL_DEFS = """
-你是 RT面板 内置的跨时代运维智能体（Agent）。用户通常只说一句话描述目标，你需要：
+你是 云枢面板 内置的跨时代运维智能体（Agent）。用户通常只说一句话描述目标，你需要：
 1) 先在正文中用简短的步骤清单说明你的执行计划；
 2) 然后在回复末尾为计划中的每一步输出一个 action 代码块（markdown），格式严格如下：
 ```action
@@ -65,7 +65,7 @@ TOOL_DEFS = """
 """
 
 DEFAULT_SYSTEM = (
-    f'你是 RT面板（高端服务器运维面板）内置的 AI 运维智能体，版本 v{PANEL_VERSION}。'
+    f'你是 云枢面板（高端服务器运维面板）内置的 AI 运维智能体，版本 v{PANEL_VERSION}。'
     '你精通 Linux/Windows 运维全栈：建站、Nginx、SSL、Docker、数据库、防火墙、备份、故障排查。'
     '回答简洁专业、使用中文、条理清晰。{tools}'
 )
@@ -591,7 +591,7 @@ def _dispatch(tool: str, p: dict, user: dict) -> str:
         if query('SELECT id FROM websites WHERE domain=?', (domain,), one=True):
             return '该域名已存在'
         title = str(p.get('title', domain))[:100]
-        desc = str(p.get('desc', '由 RT面板 AI 智能体创建'))[:200]
+        desc = str(p.get('desc', '由 云枢面板 AI 智能体创建'))[:200]
         root = os.path.join(WWWROOT_DIR, domain)
         os.makedirs(root, exist_ok=True)
         with open(os.path.join(root, 'index.html'), 'w', encoding='utf-8') as f:

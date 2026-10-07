@@ -1,5 +1,5 @@
 # Created by 小杜 on 2026/08
-# RT面板 Windows 安装核心逻辑（由 setup.hta 图形向导调用，也可静默运行）
+# 云枢面板 Windows 安装核心逻辑（由 setup.hta 图形向导调用，也可静默运行）
 #
 # 约定：凡是要中止的失败分支，都必须先打 ##RT-FAIL## 哨兵再 exit。
 # 原因：图形向导靠 ASCII 哨兵判断成败 —— 日志里的中文在不同读取编码下会匹配不上，
@@ -225,7 +225,7 @@ New-Item -ItemType Directory -Force -Path $dataDir | Out-Null
 $cfg = [ordered]@{
     port = $Port
     bind_host = '0.0.0.0'
-    site_name = 'RT面板'
+    site_name = '云枢面板'
     account_server = $AccountServer
     theme = 'blackgold'
 } | ConvertTo-Json
@@ -250,7 +250,7 @@ $launcher = Join-Path $InstallDir 'start-panel.cmd'
 $launcherText = (@(
     '@echo off',
     'chcp 65001 >nul',
-    'title RT Panel',
+    'title Yunshu Panel',
     'cd /d "' + $backendDir + '"',
     'set "PY=' + $pyCmd + '"',
     'if not exist "%PY%" set "PY=python"',
@@ -302,16 +302,16 @@ if (Test-Path $iconSrc) {
 }
 try {
     $ws = New-Object -ComObject WScript.Shell
-    $desktop = $ws.CreateShortcut([Environment]::GetFolderPath('Desktop') + '\RT面板.lnk')
+    $desktop = $ws.CreateShortcut([Environment]::GetFolderPath('Desktop') + '\云枢面板.lnk')
     $desktop.TargetPath = $launcher
     $desktop.WorkingDirectory = $InstallDir
-    $desktop.Description = 'RT面板 - 高端服务器运维面板'
+    $desktop.Description = '云枢面板 - 高端服务器运维面板'
     if (Test-Path $iconDst) { $desktop.IconLocation = "$iconDst,0" }
     $desktop.Save()
 
-    $smDir = [Environment]::GetFolderPath('StartMenu') + '\Programs\RT面板'
+    $smDir = [Environment]::GetFolderPath('StartMenu') + '\Programs\云枢面板'
     New-Item -ItemType Directory -Force -Path $smDir | Out-Null
-    $sm = $ws.CreateShortcut("$smDir\RT面板.lnk")
+    $sm = $ws.CreateShortcut("$smDir\云枢面板.lnk")
     $sm.TargetPath = $launcher
     $sm.WorkingDirectory = $InstallDir
     if (Test-Path $iconDst) { $sm.IconLocation = "$iconDst,0" }

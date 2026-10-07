@@ -224,7 +224,7 @@ def deploy_site_files():
 
 def main():
     print('=' * 56)
-    print('  RT面板 发布打包工具')
+    print('  云枢面板 发布打包工具')
     print('=' * 56)
     stage = os.path.join(RELEASE, 'staging')
     if os.path.isdir(stage):
