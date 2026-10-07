@@ -1,7 +1,7 @@
 #!/bin/bash
 # Created by 小杜 on 2026/08
 
-# 锐同面板 Linux 启动脚本
+# 芮拓面板 Linux 启动脚本
 set -e
 cd "$(dirname "$0")/backend"
 
@@ -18,5 +18,5 @@ if [ ! -d ".deps/fastapi" ]; then
     }
 fi
 
-echo "[*] 锐同面板启动中: http://127.0.0.1:8000"
+echo "[*] 芮拓面板启动中: http://127.0.0.1:8000"
 exec python3 run.py

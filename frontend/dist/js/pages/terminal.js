@@ -57,7 +57,7 @@ export default {
       this.status = '连接中…'
       this.ws.onopen = () => {
         this.status = '已连接'
-        this.term.writeln('\x1b[1;33m—— 锐同面板 Web 终端 ——\x1b[0m')
+        this.term.writeln('\x1b[1;33m—— 芮拓面板 Web 终端 ——\x1b[0m')
         this.sendResize()
         this.term.focus()
       }

@@ -42,7 +42,7 @@ def overview(user: dict = Depends(get_current_user)):
         data = {}
     data['panel'] = {
         'version': PANEL_VERSION,
-        'site_name': get_config().get('site_name', '锐同面板'),
+        'site_name': get_config().get('site_name', '芮拓面板'),
         'started_at': getattr(router, '_started_at', now()),
         'is_admin': user['role'] == 'admin',
         'elevated': True,

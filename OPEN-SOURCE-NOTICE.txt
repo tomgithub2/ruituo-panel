@@ -1,7 +1,7 @@
-锐同面板 开源说明
+芮拓面板 开源说明
 ================
 
-本目录为 锐同面板 面板端开源代码（Source-Available，详见 LICENSE-SOURCE）。
+本目录为 芮拓面板 面板端开源代码（Source-Available，详见 LICENSE-SOURCE）。
 
 【开源范围】面板端业务功能：backend/（除安全模块）+ frontend/（除安全页面）
             + tools/（构建工具）+ 安装器源码

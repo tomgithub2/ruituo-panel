@@ -87,7 +87,7 @@ return function render(_ctx, _cache) {
 
   return (_openBlock(), _createElementBlock("div", _hoisted_1, [
     _createElementVNode("div", _hoisted_2, [
-      _cache[11] || (_cache[11] = _createStaticVNode("<div class=\"setup-brand\"><div class=\"setup-logo\">RT</div><div class=\"setup-title\">初始化 锐同面板</div><div class=\"setup-sub\">首次使用 · 创建管理员账号 · 绑定官网账户解锁全部能力</div></div><div class=\"setup-steps\"><div class=\"step done\"><i>1</i><span>校验令牌</span></div><div class=\"step-line\"></div><div class=\"step\"><i>2</i><span>管理员账号</span></div><div class=\"step-line\"></div><div class=\"step\"><i>3</i><span>官网账户<span class=\"opt\">可选</span></span></div></div>", 2)),
+      _cache[11] || (_cache[11] = _createStaticVNode("<div class=\"setup-brand\"><div class=\"setup-logo\">RT</div><div class=\"setup-title\">初始化 芮拓面板</div><div class=\"setup-sub\">首次使用 · 创建管理员账号 · 绑定官网账户解锁全部能力</div></div><div class=\"setup-steps\"><div class=\"step done\"><i>1</i><span>校验令牌</span></div><div class=\"step-line\"></div><div class=\"step\"><i>2</i><span>管理员账号</span></div><div class=\"step-line\"></div><div class=\"step\"><i>3</i><span>官网账户<span class=\"opt\">可选</span></span></div></div>", 2)),
       _createVNode(_component_el_form, {
         ref: "formRef",
         model: _ctx.form,

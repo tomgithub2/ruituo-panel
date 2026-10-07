@@ -84,7 +84,7 @@ def main():
     # 早先只签 files，导致 version/url/size 可被改（P-10：强制降级 + url 未签可做 SSRF），
     # 面板侧已同步改为校验整份清单，这里必须一致，否则新旧不兼容。
     manifest = {
-        'product': '锐同面板',
+        'product': '芮拓面板',
         'version': VERSION,
         'generated_at': int(time.time()),
         'files': files,
@@ -95,7 +95,7 @@ def main():
     # latest.json
     latest = {
         'version': VERSION,
-        'notes': sys.argv[2] if len(sys.argv) > 2 else f'锐同面板 v{VERSION} 更新',
+        'notes': sys.argv[2] if len(sys.argv) > 2 else f'芮拓面板 v{VERSION} 更新',
         'url': f'/update/{zip_name}',
         'size': os.path.getsize(zip_path),
         'manifest': manifest,

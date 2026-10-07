@@ -1,6 +1,6 @@
 # Created by 小杜 on 2026/08
 
-"""锐同面板 全局配置（JSON 持久化）。"""
+"""芮拓面板 全局配置（JSON 持久化）。"""
 import json
 import os
 import secrets
@@ -31,7 +31,7 @@ _lock = threading.RLock()
 DEFAULTS = {
     'port': 8000,
     'bind_host': '0.0.0.0',
-    'site_name': '锐同面板',
+    'site_name': '芮拓面板',
     'account_server': 'https://www.rt888.icu',
     'language': 'zh-CN',
     'theme': 'lightgold',

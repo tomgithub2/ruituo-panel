@@ -224,7 +224,7 @@ def site_create(body: dict, request: Request, user: dict = Depends(require_perm(
 <style>body{{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;
 font-family:system-ui;background:#0f1420;color:#dfe6f5}}h1{{font-weight:500}}
 span{{color:#409eff}}</style></head><body><h1>欢迎访问 <span>{domain}</span></h1>
-<p style="position:fixed;bottom:16px;color:#5b6b85">由 锐同面板 运维面板托管</p></body></html>''')
+<p style="position:fixed;bottom:16px;color:#5b6b85">由 芮拓面板 运维面板托管</p></body></html>''')
     target = _safe_proxy_target(body.get('target', '')) if stype == 'proxy' else ''
     # 一键建站：可选同时创建同名 MySQL 数据库 + FTP 账号
     db_info = None
@@ -740,7 +740,7 @@ def site_put_settings(sid: int, body: dict, request: Request,
 # ---------------- P-06：nginx 配置注入防护 ----------------
 # 进 nginx 配置的用户输入必须过白名单：nginx 的词法与行无关，一个 `;` 就能提前结束当前指令，
 # 一个 `}` 就能跳出 location/server 块，所以"只转义换行"远远不够。
-NGINX_CONF_FILE = '/etc/nginx/conf.d/锐同面板.conf'
+NGINX_CONF_FILE = '/etc/nginx/conf.d/芮拓面板.conf'
 _DOMAIN_TOKEN_RE = re.compile(r'^[A-Za-z0-9.*_-]{1,253}$')
 _REDIRECT_BAD = set(';{}#\n\r$')
 _PSEUDO_BAD = set('{}')
@@ -970,7 +970,7 @@ def _render_nginx():
     conf_dir = '/etc/nginx/conf.d'
     os.makedirs(conf_dir, exist_ok=True)
     try:
-        with open(os.path.join(conf_dir, '锐同面板.conf'), 'w', encoding='utf-8') as f:
+        with open(os.path.join(conf_dir, '芮拓面板.conf'), 'w', encoding='utf-8') as f:
             f.write('\n'.join(out))
     except PermissionError:
         pass  # 无权限时仅面板内生效

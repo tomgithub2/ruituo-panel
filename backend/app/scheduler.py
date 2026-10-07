@@ -220,7 +220,7 @@ def _check_alerts():
                 (now(), metric, level, msg, 'fired'))
         channels = [c for c in (rule['channels'] or '').split(',') if c]
         try:
-            send_notify(f'锐同面板 告警: {msg}', f'时间: {time.strftime("%Y-%m-%d %H:%M:%S")}\n{msg}',
+            send_notify(f'芮拓面板 告警: {msg}', f'时间: {time.strftime("%Y-%m-%d %H:%M:%S")}\n{msg}',
                         only=channels or None)
         except Exception:
             pass

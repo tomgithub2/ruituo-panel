@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ 锐同面板（Ruitong Panel）
+# 🛡️ 芮拓面板（Ruituo Panel）
 
 **跨平台服务器运维面板 · 开源版**　|　**Cross-platform Server Operations Panel · Open Source Edition**
 
@@ -17,9 +17,9 @@
 
 ## 📖 简介 Introduction
 
-锐同面板是一款**完全自研**的跨平台服务器运维面板，功能覆盖服务器运维全场景，支持 Windows 与 Linux 双平台，提供白金 / 亮色专业 / 银黑三大主题（默认白金）。
+芮拓面板是一款**完全自研**的跨平台服务器运维面板，功能覆盖服务器运维全场景，支持 Windows 与 Linux 双平台，提供白金 / 亮色专业 / 银黑三大主题（默认白金）。
 
-Ruitong Panel is a **fully self-developed** cross-platform server operations panel with features that match and exceed similar products. It supports Windows and Linux with three built-in themes (Platinum default / Light-Pro / Silver-Black).
+Ruituo Panel is a **fully self-developed** cross-platform server operations panel with features that match and exceed similar products. It supports Windows and Linux with three built-in themes (Platinum default / Light-Pro / Silver-Black).
 
 ## ✨ 核心特性 Features
 
@@ -118,4 +118,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-<div align="center">© 2026 小杜（锐同面板官方） · https://www.rt888.icu</div>
+<div align="center">© 2026 小杜（芮拓面板官方） · https://www.rt888.icu</div>

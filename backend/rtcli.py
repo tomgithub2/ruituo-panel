@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Created by 小杜 on 2026/09
-"""锐同面板 命令行管理器（rt）。
+"""芮拓面板 命令行管理器（rt）。
 
 用法：
     rt                 进入交互菜单（列表式）
@@ -87,7 +87,7 @@ def _binding():
 
 def cmd_status(_args):
     ver, cfg = _config()
-    print(_c("锐同面板 状态", BOLD))
+    print(_c("芮拓面板 状态", BOLD))
     print(f"  版本      : {ver or _c('读取失败', RED)}")
     print(f"  安装目录  : {HERE}")
     print(f"  监听端口  : {cfg.get('port', 8000)}（{'监听中' if _port_listening(int(cfg.get('port', 8000))) else '未监听'}）")
@@ -294,7 +294,7 @@ CMDS = {
 
 def show_help():
     ver, _ = _config()
-    print(_c("锐同面板 命令行管理器", BOLD) + f"  （面板版本 {ver or '?'}）")
+    print(_c("芮拓面板 命令行管理器", BOLD) + f"  （面板版本 {ver or '?'}）")
     print("  用法: rt <命令> [参数]    不带命令则进入交互菜单")
     print()
     for i, (name, title, note) in enumerate(MENU, 1):
@@ -309,7 +309,7 @@ def menu():
         ver, cfg = _config()
         print()
         print(_c("=" * 60, DIM))
-        print(_c("  锐同面板 命令行管理器", BOLD) +
+        print(_c("  芮拓面板 命令行管理器", BOLD) +
               f"   版本 {ver or '?'}   端口 {cfg.get('port', 8000)}"
               f"   {'运行中' if _port_listening(int(cfg.get('port', 8000))) else '未运行'}")
         print(_c("=" * 60, DIM))

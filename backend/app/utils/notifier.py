@@ -95,7 +95,7 @@ def _send_email(cfg: dict, title: str, content: str) -> dict:
             return {'ok': False, 'error': '邮件配置不完整'}
         msg = MIMEText(content, 'plain', 'utf-8')
         msg['Subject'] = Header(title, 'utf-8')
-        msg['From'] = formataddr(('锐同面板', user))
+        msg['From'] = formataddr(('芮拓面板', user))
         msg['To'] = to
         if ssl:
             server = smtplib.SMTP_SSL(host, port, timeout=15)
