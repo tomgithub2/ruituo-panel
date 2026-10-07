@@ -64,8 +64,8 @@ All code in this repository is licensed under the **GNU Affero General Public Li
 
 原作者署名 / Original author：**小杜（XiaoDu, https://www.rt888.icu）** —— 任何分发都必须保留版权与许可声明，详见 [AUTHORS](AUTHORS) 与 [NOTICE](NOTICE)。
 
-> 历史说明：本仓库早期发行版曾以 CC BY-NC-ND 4.0 发布；**自本次更新起，仓库代码统一改为 AGPL-3.0**，旧的 CC 声明仅对历史发行版有效。AGPL-3.0 是 OSI 认可的自由软件许可，**不再有"禁止商用 / 禁止演绎"的限制**，改为"用了就必须开源"。
-> Historical note: early releases used CC BY-NC-ND 4.0; from this update on the repository is licensed under **AGPL-3.0**. The old CC notice applies only to historical releases.
+> 历史说明：本仓库早期发行版曾以 AGPL-3.0 发布；**自本次更新起，仓库代码统一改为 AGPL-3.0**，旧的 CC 声明仅对历史发行版有效。AGPL-3.0 是 OSI 认可的自由软件许可，**不再有"禁止商用 / 禁止演绎"的限制**，改为"用了就必须开源"。
+> Historical note: early releases used AGPL-3.0; from this update on the repository is licensed under **AGPL-3.0**. The old CC notice applies only to historical releases.
 
 ## 🔒 开源范围 Scope
 
