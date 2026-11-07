@@ -123,4 +123,4 @@ def get_jwt_secret() -> str:
             return f.read().strip()
 
 
-PANEL_VERSION = '2.0.0-rc3'
+PANEL_VERSION = '2.0.0-rc5'

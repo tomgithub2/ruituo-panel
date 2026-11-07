@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-AGPL%20v3-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-blue)
 ![AI](https://img.shields.io/badge/AI-44%20Tools-brightgreen)
-![Version](https://img.shields.io/badge/Version-1.0--beta-orange)
+![Version](https://img.shields.io/badge/Version-2.0.0--rc5--beta-orange)
 
 **原作者（Original Author）**：小杜（XiaoDu）　·　**官网（Website）**：https://www.rt888.icu
 
